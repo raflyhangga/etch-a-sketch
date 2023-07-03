@@ -1,3 +1,14 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&    family=Roboto:ital,wght@0,400;0,500;0,900;1,500;1,900&display=swap');
+
+/* Variables */
+:root {
+    --bgPrimary : #F2E9E4;
+    --bgSecondary : #C9ADA7;
+    --Primary : #9A8C98;
+    --Secondary : #4A4E69;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +16,46 @@
 }
 
 body {
+    background-color: var(--bgPrimary);
+    font-family: 'Poppins', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 12px;
     height: 100vh;
 }
+
+button {
+    border: none;
+    padding: .5rem 1rem;
+    background-color: var(--Secondary);
+    color: var(--bgPrimary);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1{
+    color: var(--Primary);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.header p {
+    color: var(--Secondary);
+}
+
 
 .board {
     display: grid;
     width: 500px;
     height: 400px;
     border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
 }
