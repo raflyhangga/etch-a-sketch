@@ -51,7 +51,7 @@ function resetBoard(){
     const divs = document.querySelectorAll(".board div")
     console.log("Tes")
     divs.forEach((div)=>{
-        div.style.backgroundColor="var(--bgPrimary)";
+        div.style.backgroundColor="white";
     })
     
 }

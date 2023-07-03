@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     height: 100vh;
 }
 
@@ -52,6 +52,7 @@ button {
 
 
 .board {
+    background-color: white;
     display: grid;
     width: 500px;
     height: 400px;
